@@ -1,0 +1,33 @@
+<!--
+ * @Date: 2022-01-26
+ * @Description: 
+-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <script
+            type="text/javascript"
+            src="https://unpkg.com/@faker-js/faker"
+        ></script>
+    </head>
+
+    <body>
+        <script>
+            // Caitlyn Kerluke
+            const randomName = faker.name.findName();
+
+            // Rusty@arne.info
+            const randomEmail = faker.internet.email();
+
+            // An object representing a random contact card
+            // containing many properties
+            const randomCard = faker.helpers.createCard();
+
+            console.log("=>", randomName, randomEmail, randomCard);
+        </script>
+    </body>
+</html>
